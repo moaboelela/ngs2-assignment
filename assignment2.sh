@@ -70,7 +70,8 @@ done
 
 ### 02. Adding Read Groups, Sortting, Marking Duplicates, and Creating Index ###
 mkdir -p ../GATK_results/picard_res
-for i in S1_L001 S2_L001;do
+for i in S1_L001 S2_L001;
+do
 	SM=$(basename $i | cut -d"_" -f1)      
 	LB=$i                             
 	PL="Illumina"                     
